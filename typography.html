@@ -19,6 +19,9 @@
         p.mark{
             color: black;
         }
+        .greenyellow{
+            color: greenyellow;
+        }
     </style>
 </head>
 <body>
@@ -49,9 +52,77 @@
         <p class="mark">I am a .mark paragraph</p>
         <p>i am <mark>marked</mark> using &lt;mark&gt; tag</p>
     </div>
-    <div class="container-fluid p-5 my-5 bg-secondary text-white">
+    <div class="container-fluid p-5 my-5 bg-dark text-white">
         <h1>Abbreviations</h1>
         <p>The <abbr title="World Health Organization">WHO</abbr> is an international health body of the <abbr title="United Nations">UN</abbr>.</p>
-    </div>   
+        <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> is an international health body of the <abbr title="United Nations">UN</abbr>.</p>
+    </div> 
+    <div class="container-fluid p-5 my-5 bg-primary text-white">
+        <h1>Blockquote</h1>
+        <p>.blockquote and .blockquote-footer</p>
+        <blockquote class="blockquote">The greatest want of the world is the want of men - men who will not be bought or sold; men who in their inmost souls are true and honest; men who do not fear to call sin by its right name; men whose conscience is as true to duty as the needle to the pole; men who will stand for the right though the heavens fall.</blockquote>
+        <blockquote class="blockquote-footer">EGW quotes</blockquote>
+    </div>
+    <div class="container-fluid p-5 my-5 bg-dark text-white">
+        <h1>Bootstrap Lists</h1>
+        <code>Definition Lists</code>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>-black hot drink</dd>
+            <dt>milk</dt>
+            <dd>-white cold drink</dd>
+        </dl>
+        <code>.list-unstyled</code>
+        <p class="greenyellow">//without the .list-unstyled</p>
+        <ul type="circle">            
+            <li>Coffee</li>
+            <li>tea</li>
+        </ul>
+        <p class="greenyellow">//with the .list-unstyled</p>
+        <ul type="circle" class="list-unstyled">            
+            <li>Coffee</li>
+            <li>tea</li>
+        </ul>
+        <code>.list-inline ft .list-inline-item</code>
+        <p class="greenyellow">//lists the items on a single line</p>
+        <ul class="list-inline">
+            <li class="list-inline-item">Coffee</li>
+            <li class="list-inline-item">Tea</li>
+            <li class="list-inline-item">Milk</li>
+          </ul>
+    </div>  
+    <div class="container-fluid p-5 my-5 bg-dark text-white">
+        <h1>Bootstrap &lt;code&gt; tag</h1>
+        <p>HTML <code>span</code>, <code>div</code>, and <code>section</code> tags are used to define a section</p>
+    </div>
+    <div class="container-fluid p-5 my-5 bg-primary text-white">
+        <h1>Bootstrap &lt;kbd&gt; tag</h1>
+        <p>HTML <kbd>ctrl+p</kbd> is to open the print dialog box</p>
+    </div>
+    <div class="container-fluid p-5 my-5 bg-primary text-white">
+        <h1>.lead to make paragraphs stand out</h1>
+        <p class="lead">.lead paragraph</p>
+    </div>
+    <div class="container-fluid p-5 my-5 bg-primary text-white">
+        <h1>.text-break</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+
+            Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. 
+            
+        </p>
+    </div>
+    <div class="container-fluid p-5 my-5 bg-dark text-white">
+        <h1>Text-alignment</h1>
+        <p class="text-start">.text-start paragraph</p>
+        <p class="text-end">.text-end paragraph</p>
+        <p class="text-center">.text-center paragraph</p>
+        <p class="nowrap"> .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap paragraph .nowrap</p>
+    </div>
+    <div class="container-fluid p-5 my-5 bg-dark text-white">
+        <h1>Text-transformation</h1>
+        <p class="text-lowercase">.text-lowercase paragraph</p>
+        <p class="text-uppercase">.text-uppercase paragraph</p>
+        <p class="text-capitalize">.text-capitalize paragraph</p>        
+    </div>
 </body>
 </html>
