@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Buttons</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        h1{
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 p-5 my-5">
+        <h1 class="text-capitalize">bootstrap 5 buttons</h1>
+        <div class="container 5 p-3 my-3">
+            <code>.btn</code>
+            <button class="btn" type="button" style="border: 2px solid gray;">basic</button>
+        </div>       
+        <div class="container 5 p-3 my-3">
+            <code>.btn btn-primary</code>
+            <button class="btn btn-primary" type="button">primary</button>
+        </div>        
+        <div class="container 5 p-3 my-3">
+            <code>.btn btn-secondary</code>
+            <button class="btn btn-secondary" type="button">secondary</button>
+        </div>        
+        <div class="container 5 p-3 my-3">
+            <code>.btn btn-success</code>
+            <button class="btn btn-success" type="button">success</button>
+        </div>        
+        <div class="container 5 p-3 my-3">
+            <code>.btn btn-dark</code>
+            <button class="btn btn-dark" type="button">dark</button>
+        </div>   
+        <div class="container 5 p-3 my-3">
+            <code>.btn btn-danger</code>
+            <button class="btn btn-danger">danger</button>
+        </div> 
+        <div class="container 5 p-3 my-3">
+            <code>.btn btn-warning</code>
+            <button class="btn btn-warning">warning</button>
+        </div>    
+        <div class="container nt-3 p-3 my-3">
+            <code>.btn btn-info</code>
+            <button class="btn btn-info" type="button">info</button>
+        </div>
+        <div class="container 5 p-3 my-3">
+            <code>.btn btn-link</code>
+            <button class="btn btn-link" type="button">link</button>
+        </div>
+        <div class="container 5 p-3 my-3 bg-dark">
+            <code>.btn btn-light</code>
+            <button class="btn btn-light">light</button>
+        </div>
+    </div>
+    <div class="container 5 p-3 my-3 bg-dark">
+        <code>&lt;a&gt;, &lt;button&gt;, and &lt;input&gt;</code>
+        <button class="btn btn-primary">Button</button>
+        <input type="button" class="btn btn-primary" value="Input Button">
+        <a href="#" class="btn btn-primary">Link Button</a>
+    </div>
+    <div class="container mt-5">
+        <h1 class="text-capitalize">button outline</h1>
+        <code>.btn btn-outline-*color</code><br>
+        <button class="btn btn-outline-primary" type="button">primary</button>
+        <button class="btn btn-outline-secondary" type="button">secondary</button>
+        <button class="btn btn-outline-success" type="button">success</button>
+        <button class="btn btn-outline-info" type="button">info</button>
+        <button class="btn btn-outline-warning" type="button">warning</button>
+        <button class="btn btn-outline-danger" type="button">danger</button>
+        <button class="btn btn-outline-dark" type="button">dark</button>
+        <button class="btn btn-outline-light" type="button">light</button>
+    </div>
+    <div class="container mt-5 p-3 my-3">
+        <h1 class="text-capitalize">button sizes</h1>
+        <button class="btn btn-outline-danger btn-lg">Large</button>
+        <button class="btn btn-outline-danger">Default</button>
+        <button class="btn btn-outline-danger btn-sm">Small</button>        
+    </div>
+    <div class="container mt-5 p-5 my-5">
+        <h1 class="text-capitalize">block level buttons</h1>
+        <code>use div.d-grid>btn.btn-block</code>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-block">Full Width Button</button>
+        </div>
+        <code>.d-grid gap-*no</code>
+        <div class="d-grid gap-3">
+            <button class="btn btn-dark btn-block">Full Width Button</button>
+            <button class="btn btn-dark btn-block">Full Width Button</button>
+            <button class="btn btn-dark btn-block">Full Width Button</button>
+        </div>
+        <div class="container mt-5 p-5 my-5">
+            <h1 class="text-capitalize">active/disabled buttons</h1>
+            <code>.active and .disabled</code>
+            <button class="btn btn-primary active text-capitalize">active primary</button>
+            <button class="btn btn-primary text-capitalize" disabled>disabled primary</button>
+            <a href="#" class="btn btn-primary active text-capitalize">active link</a>
+            <a href="#" class="btn btn-primary disabled text-capitalize">disabled link</a>
+        </div>
+        <div class="container mt-5 p-5 my-5">
+            <h1 class="text-capitalize">spinner buttons</h1>
+            <code>btn.btn btn-primary>span.spinner-border spinner-border-sm</code>
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+            </button>        
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>Loading..
+            </button>
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-border spinner-border-sm"></span>Loading..
+            </button>
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-grow spinner-grow-sm"></span>Loading..
+            </button>
+        </div>
+    </div>
+</body>
+</html>
